@@ -1,0 +1,155 @@
+
+
+:root{
+    --orange:#FF900E;
+    --ash:#727272;
+}
+
+*{
+    margin: 0 auto;
+    font-family: 'Work Sans';
+}
+
+header{
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/* nav style suru */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+
+}
+nav h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 1.2em;
+}
+/* nav style sesh */
+.brand{
+    align-items: center;
+}
+.brand-info{
+    width: 850px;
+    text-align: center;
+    padding-top: 70px;
+}
+.brand-info h1 {
+    font-weight: 700;
+    font-size: 64px;
+}
+.brand-info p{
+    color: var(--ash);
+    padding: 32px 10px;
+}
+
+.button{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(242, 238, 238);
+    position: relative;
+    margin-left: 45%;
+}
+.brand img {
+    position: relative;
+    width: 1440px;
+    height: 700px;
+    margin: 5% 10%;
+}
+ /* header section sesh */
+
+ .features{
+    margin-top: 50px;
+    max-width: 1400px;
+    display: flex;
+    column-gap: 50px;
+ }
+ .img-container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+ }
+ .info-container{
+    position: relative;
+ }
+ .info{
+    position: relative;
+    top: 37%;
+    width: 537px;
+    height: 304px;
+ }
+ .info .button{
+    margin-left: 0;
+ }
+ .info h1{
+    width: 450px;
+    margin: 0;
+    font-size: 45px;
+    padding-bottom: 20px; 
+ }
+ .info p{
+    color: var(--ash);
+    padding-bottom: 20px;
+
+
+ }
+ .ash{
+    color:var(--ash) ;
+
+ }
+ .orange{
+    color: var(--orange);
+ }
+
+
+
+@media screen and (max-width:576px) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+    }
+    .brand-info{
+        width: 100%;
+    }
+    .button{
+        position: relative;
+        margin-left: 30%;
+    }
+    .brand img{
+        width: 400px;
+        height: 350px;
+
+    }
+    .features{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5px 20px;
+     
+    }
+    .info p{
+        margin: 0;
+        width: 450px;
+    }
+    .img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+    }
+
+}
