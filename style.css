@@ -303,7 +303,7 @@ ul{
 
     .features{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 5px 20px;
         width: 90%;
     }
@@ -313,9 +313,7 @@ ul{
         width: 90%;
         height: 50%;
         padding-left: 5%;
-    }
-    .info .button{
-        margin-bottom: 10%;
+        padding-top: 35px;
     }
     .info p{
         width: 95%;
@@ -332,6 +330,7 @@ ul{
         display: flex;
         flex-direction: column;
         margin-left: 5%;
+        margin-top: 10%;
     }
     .description{
         width: 90%;
