@@ -57,6 +57,7 @@ ul{
 .brand-info p{
     color: var(--ash);
     padding: 32px 10px;
+    font-size: 18px;
 }
 
 .button{
@@ -104,7 +105,7 @@ ul{
  }
  .info{
     position: relative;
-    top: 37%;
+    top: 30%;
     width: 537px;
     height: 304px;
  }
@@ -120,6 +121,7 @@ ul{
  .info p{
     color: var(--ash);
     padding-bottom: 20px;
+    font-size: 18px;
 
  }
  .ash{
@@ -142,7 +144,6 @@ ul{
 }
 .description{
     width: 100%;
- 
 }
 .description .title{
     padding: 1px 15px;
@@ -162,7 +163,7 @@ ul{
     width: 100%;
     height: 78px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--ash);    
 }
 .description-box{
@@ -216,7 +217,7 @@ ul{
     position: absolute;
     width: 100%;
     font-weight: 400;
-    font-size: 16px;
+    font-size:18px;
     color: var(--ash);
     width: 540px;
     
@@ -250,7 +251,7 @@ ul{
     color: var(--ash);
 }
 .sponspors p{
-    padding: 20px 5px;
+    padding: 40px 5px;
 }
 /* for animation */
 
@@ -283,7 +284,7 @@ ul{
     text-align: center;
  }
  .logo{
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -456,7 +457,6 @@ ul{
     .title h1{
         text-align: center;
     }
-
     .title p{
         width: 90%;
         text-align: center;
