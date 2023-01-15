@@ -15,7 +15,9 @@ header{
     max-width: 1800px;
 }
 
-/* nav style suru */
+/* -----------------
+nav style suru 
+----------------*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -31,9 +33,15 @@ ul{
     display: flex;
     gap: 20px;
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
-/* nav style sesh */
+/*----------------
+ nav style sesh 
+ ----------------*/
+
+ /*----------------
+ brand style start 
+ ----------------*/
 .brand{
     align-items: center;
 }
@@ -69,7 +77,14 @@ ul{
     height: 700px;
     margin: 5% 10%;
 }
- /* header section sesh */
+/*---------------------------
+ brand and header section sesh 
+ --------------------------*/
+
+
+ /*------------------
+ features section start 
+ -------------------*/
 
  .features{
     margin-top: 50px;
@@ -106,7 +121,6 @@ ul{
     color: var(--ash);
     padding-bottom: 20px;
 
-
  }
  .ash{
     color:var(--ash) ;
@@ -116,7 +130,9 @@ ul{
     color: var(--orange);
  }
 
-/* second section suru */
+ /*------------------
+ second section start 
+ -------------------*/
 
 .second-section {
     display: flex;
@@ -178,7 +194,13 @@ ul{
     margin-top: -100px;
     color: white;
 }
-/* end of second section */
+ /*------------------
+ second section end 
+ -------------------*/
+
+/*------------------
+ third section start 
+ -------------------*/
 
 .third-secion , .fourth-section{
     position: relative;
@@ -219,21 +241,41 @@ ul{
     row-gap: 15px;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid; */
 }
-.box-info h1 , .sponspors h1{
+.box-info h1 , .sponspors h1 , .fifth-section h1{
     font-size: 45px;
 }
-.box-info p , .sponspors p{
+.box-info p , .sponspors p, .fifth-section p{
     font-size: 20px;
     color: var(--ash);
 }
 .sponspors p{
     padding: 20px 5px;
 }
- /* third section sesh */
+/* for animation */
 
- .sponspors{
+@keyframes rotate {
+    form{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+.rotate:hover{
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+/*------------------
+ third section end 
+ -------------------*/
+/*------------------
+ fourth section start 
+ -------------------*/
+ .sponspors , .fifth-section{
     width: 542px;
     height: 129px;
     margin-top: 40px;
@@ -248,7 +290,44 @@ ul{
     justify-content: space-between;
     filter: grayscale(100%);
  }
+ /*------------------
+ fourth section end 
+ -------------------*/
+ .fifth-section{
+    height: 100%;
+ }
+ .fifth-section h1{
+    margin-top: 60px;
+ }
+ .fifth-section P{
+    padding: 20PX 1PX;
+ }
+ .member{
+    margin: o;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    justify-content: space-between;
+    row-gap: 20px;
+ }
+.team img{
+    width: 300px;
+    height: 250px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    box-shadow: 4px 4px rgba(18, 17, 17, 0.123);
+}
+.team h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*------------------
+ fifth section end 
+ -------------------*/
 
+
+/* footer suru */
  footer{
     background: rgba(255, 143, 14, 0.224);
     width: 1400px;
@@ -260,6 +339,9 @@ ul{
     text-align: center;
     padding-top: 35px;
  }
+/*------------------
+ footer section end 
+ -------------------*/
 
 @media screen and (max-width:576px) {
 
@@ -326,6 +408,7 @@ ul{
         justify-items: center;
      
     }
+    /* second-section */
     .second-section{
         display: flex;
         flex-direction: column;
@@ -357,7 +440,7 @@ ul{
         margin-left: -30px;
     }
     .archi-img img{
-        width: 100%;
+        width: 98%;
         padding-top: 30%;
         padding-bottom: 10%;
     }
@@ -365,9 +448,10 @@ ul{
         position: relative;
         width: 160px;
         height: 120px;
-        margin: 5% 30%;
+        margin: 5% 25%;
         font-size: 20px;
     }
+    /* third-secion */
     .title p{
         width: 90%;
     }
@@ -376,11 +460,24 @@ ul{
         align-items: center;
         row-gap: 20px;
     }
+    /* .fourth-section */
     .logo{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
-        margin-left: 8px;
+        justify-items: center;
+        padding-top: 20px;
+    }
+    .logo img{
+        width: 110px;
+        height: 40px;
+    }
+    /*.fifth-section */
+    .member{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        justify-items: center;
+        row-gap: 10px;
     }
 
 }
