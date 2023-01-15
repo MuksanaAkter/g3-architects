@@ -446,14 +446,20 @@ ul{
     }
     .experience{
         position: relative;
-        width: 160px;
+        width: 180px;
         height: 120px;
         margin: 5% 25%;
         font-size: 20px;
     }
     /* third-secion */
+
+    .title h1{
+        text-align: center;
+    }
+
     .title p{
         width: 90%;
+        text-align: center;
     }
     .flex-box{
         flex-direction: column;
